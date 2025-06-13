@@ -2,16 +2,15 @@ function uppg9() {
   function sort(arr) {
     arr.forEach((num) => {
       if (num % 2 === 0) {
-        console.log(`${num} jämt`);
+        console.log(num, "jämt");
       } else {
-        console.log(`${num} udda`);
+        console.log(num, "udda");
       }
     });
   }
 
-  // Exempelarray
-  const numbers = [1, 2, 3, 4, 5, 6];
-  sort(numbers);
+  // Anropa funktionen med en array som argument
+  sort([1, 2, 3, 4, 5, 6]);
 }
 
 module.exports = { uppg9 };
